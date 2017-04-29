@@ -1,0 +1,34 @@
+<template>
+  <div>
+    <application-header title="To XXX" direction="/confirmed/projects"></application-header>
+
+    <div class="project_detail__detail">
+      <project-detail due="4/15" :timeline="[{name: 'time1'}, {name: 'time2'}]" from="20170501" to="20170531" purpose="HBD"></project-detail>
+      <div class="center map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3240.44957040023!2d139.69739011471083!3d35.69055298019216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1493465984926" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="tabbar">
+        <button class="button--large--cta" style="width: 95%; margin: 0 auto;" @click="moveToGenerateMessage()">Message</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import ApplicationHeader from '@/components/header/ApplicationHeader'
+import ProjectDetail from '@/components/project/ProjectDetail'
+
+export default {
+  name: 'ConfirmedProjectDetail',
+  components: {
+    'application-header': ApplicationHeader,
+    'project-detail': ProjectDetail
+  },
+  methods: {
+    moveToGenerateMessage: function() {
+      this.$router.push({ path: '/message/form' })
+    }
+  }
+}
+</script>

@@ -6,7 +6,7 @@
       <div class="list" v-if="search_results.length != 0">
         <div class="list-item list-item--chevron" v-for="result in search_results">
           <div class="list-item__left">
-            {{ result.fromDatetime }}
+            <span class="date">{{ result.fromDatetime }}</span>
           </div>
 
           <div class="list-item__center">
@@ -36,21 +36,29 @@ export default {
         href: BASE_URI + '/1',
         from: 'Tokyo Station',
         to: 'Ueno Station',
-        fromDatetime: '05/01'
+        fromDatetime: '5/1'
       }, {
         title: 'Books for Yuki',
         href: BASE_URI + '/2',
         from: 'Tokyo Station',
         to: 'Hachioji Station',
-        fromDatetime: '05/01'
+        fromDatetime: '5/1'
       }, {
         title: 'Delivery Pictures',
         href: BASE_URI + '/3',
         from: 'Kichijoji Station',
         to: 'Mitaka Station',
-        fromDatetime: '06/01'
+        fromDatetime: '6/1'
       }]
     }
   }
 }
 </script>
+
+<style>
+.date {
+  font-family: futura;
+  font-size: 1.4em;
+  color: #999;
+}
+</style>

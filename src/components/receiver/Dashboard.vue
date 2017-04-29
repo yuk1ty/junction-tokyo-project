@@ -1,7 +1,7 @@
 <template>
   <div>
     <application-header title="Your Message" direction="/"></application-header>
-    <span>{{ message }}</span>
+    <div class="center">{{ message }}</div>
   </div>
 </template>
 

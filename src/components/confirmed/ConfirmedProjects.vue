@@ -6,7 +6,7 @@
       <ul class="list" v-if="search_results.length != 0">
         <li class="list-item list-item--chevron" v-for="result in search_results">
           <div class="list-item__left">
-            <img class="list-item__thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwJCB8v/9zErgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAvSURBVFjD7c0BDQAACAMgtX+KJzWGm4MCdJK6MHVELBaLxWKxWCwWi8VisVj8MV7qBgI2A8rYpgAAAABJRU5ErkJggg==">
+            <span class="date">5/1</span>
           </div>
 
           <div class="list-item__center">
@@ -51,3 +51,11 @@ export default {
   }
 }
 </script>
+
+<style>
+.date {
+  font-family: futura;
+  font-size: 1.4em;
+  color: #999;
+}
+</style>

@@ -54,6 +54,7 @@ export default {
     add: function(message) {
       // ちょっと強引だがUserNameをキーにメッセージを登録。
       localStorage.setItem("userName", message)
+      this.$router.push({ path: '/receiver/dashboard' })
     }
   }
 }

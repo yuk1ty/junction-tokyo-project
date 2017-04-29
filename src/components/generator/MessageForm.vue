@@ -7,37 +7,54 @@
       Celebrate XXX's birthday!
     </p>
 
-    <div class="random_message">
+    <div class= "random_message">
       <p>
-        H: <input type="text" class="text-input text-input--underbar" />
+        H: <input type="text" class="text-input text-input--underbar" v-model="message1" />
       </p>
       <p>
-        A: <input type="text" class="text-input text-input--underbar" />
+        A: <input type="text" class="text-input text-input--underbar" v-model="message2" />
       </p>
       <p>
-        P: <input type="text" class="text-input text-input--underbar" />
+        P: <input type="text" class="text-input text-input--underbar" v-model="message3" />
       </p>
       <p>
-        P: <input type="text" class="text-input text-input--underbar" />
+        P: <input type="text" class="text-input text-input--underbar" v-model="message4" />
       </p>
       <p>
-        Y: <input type="text" class="text-input text-input--underbar" />
+        Y: <input type="text" class="text-input text-input--underbar" v-model="message5" />
       </p>
     </div>
 
     <div class="tabbar">
-      <button class="button--large--cta" style="width: 95%; margin: 0 auto;">Confirm</button>
+      <button class="button--large--cta" style="width: 95%; margin: 0 auto;" @click="add(message1 + message2 + message3 + message4 + message5)">Confirm</button>
     </div>
   </div>
 </template>
 
 <script>
 import ApplicationHeader from '@/components/header/ApplicationHeader'
+import { mapMutations } from 'vuex'
 
 export default {
   name: 'MessageForm',
+  data() {
+    return {
+      // TODO www
+      message1: 'お誕生日',
+      message2: 'おめでとう',
+      message3: '今年一年は',
+      message4: '',
+      message5: 'かな？'
+    }
+  },
   components: {
     'application-header': ApplicationHeader,
+  },
+  methods: {
+    add: function(message) {
+      // ちょっと強引だがUserNameをキーにメッセージを登録。
+      localStorage.setItem("userName", message)
+    }
   }
 }
 </script>

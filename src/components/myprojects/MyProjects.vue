@@ -3,18 +3,18 @@
     <application-header title="My Projects" direction="/"></application-header>
 
     <div class="confirmed__list--result">
-      <ul class="list" v-if="search_results.length != 0">
-        <li class="list-item list-item--chevron" v-for="result in search_results">
+      <div class="list" v-if="search_results.length != 0">
+        <div class="list-item list-item--chevron" v-for="result in search_results">
           <div class="list-item__left">
-            <img class="list-item__thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwJCB8v/9zErgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAvSURBVFjD7c0BDQAACAMgtX+KJzWGm4MCdJK6MHVELBaLxWKxWCwWi8VisVj8MV7qBgI2A8rYpgAAAABJRU5ErkJggg==">
+            {{ result.fromDatetime }}
           </div>
 
           <div class="list-item__center">
             <div class="list-item__title"><router-link :to="result.href">{{ result.title }}</router-link></div>
             <div class="list-item__subtitle">{{ result.from }} - {{ result.to }}</div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -32,20 +32,23 @@ export default {
   data() {
     return {
       search_results: [{
-        title: 'xxx',
+        title: 'JON\'s birthday present',
         href: BASE_URI + '/1',
         from: 'Tokyo Station',
-        to: 'Ueno Station'
+        to: 'Ueno Station',
+        fromDatetime: '05/01'
       }, {
-        title: 'yyy',
+        title: 'Books for Yuki',
         href: BASE_URI + '/2',
         from: 'Tokyo Station',
-        to: 'Hachioji Station'
+        to: 'Hachioji Station',
+        fromDatetime: '05/01'
       }, {
-        title: 'zzz',
+        title: 'Delivery Pictures',
         href: BASE_URI + '/3',
         from: 'Kichijoji Station',
-        to: 'Mitaka Station'
+        to: 'Mitaka Station',
+        fromDatetime: '06/01'
       }]
     }
   }

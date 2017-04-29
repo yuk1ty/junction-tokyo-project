@@ -32,17 +32,17 @@ export default {
   data() {
     return {
       search_results: [{
-        title: 'xxx',
+        title: 'Books for Yuki',
         href: BASE_URI + '/1',
         from: 'Tokyo Station',
         to: 'Ueno Station'
       }, {
-        title: 'yyy',
+        title: 'Books for Yuki',
         href: BASE_URI + '/2',
         from: 'Tokyo Station',
         to: 'Hachioji Station'
       }, {
-        title: 'zzz',
+        title: 'Books for Yuki',
         href: BASE_URI + '/3',
         from: 'Kichijoji Station',
         to: 'Mitaka Station'

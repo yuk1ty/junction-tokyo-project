@@ -3,7 +3,7 @@
     <application-header title="Project Detail" direction="/join/dashboard"></application-header>
 
     <div class="project_detail__detail">
-      <project-detail due="4/15" :timeline="[ {name: 'name'}, {name: 'name2'}]" from="20170501" to="20170531" purpose="HBD"></project-detail>
+      <project-detail due="5/1" :timeline="timeline" from="2017/05/01" to="2017/05/31" purpose="HBD"></project-detail>
     </div>
 
     <div class="tabbar">
@@ -21,6 +21,32 @@ export default {
   components: {
     'application-header': ApplicationHeader,
     'project-detail': ProjectDetail
+  },
+  data() {
+    return {
+      timeline:
+
+        [
+          {
+            Datetime: '2017/04/30 11:30',
+            Station: 'Ueno'
+          },
+          {
+            Datetime: '2017/04/30 12:30',
+            Station: 'Tokyo'
+          },
+          // },
+          // {
+          //   Datetime: '201705011130',
+          //   Station: 'Kitasenju'
+          // },
+          // {
+          //   Datetime: '201705011230',
+          //   Station: 'Kashiwa'
+          // }
+        ]
+
+    }
   }
 }
 </script>

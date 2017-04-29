@@ -1,25 +1,25 @@
 <template>
   <div>
     <div class="center due">
-      {{ due }}
+      <span class="due-text">{{ due }}</span>
     </div>
 
-    <ul class="center timeline">
-      <li v-for="line in timeline">
-        <p class="datetime">{{ line.Datetime }}</p>
-        <p class="content">{{ line.Station }}</p>
-      </li>
-    </ul>
+    <div class="center timeline">
+      <div v-for="line in timeline">
+        <p class="datetime">datetime: {{ line.Datetime }}</p>
+        <p class="content">station: {{ line.Station }}</p>
+      </div>
+    </div>
 
     <div class="center from">
-      {{ from }}
+      from date: {{ from }}
     </div>
 
     <div class="center to">
-      {{ to }}
+      to date: {{ to }}
     </div>
     <div class="center purpose">
-      {{ purpose }}
+      purpose: {{ purpose }}
     </div>
   </div>
 </template>
@@ -30,3 +30,13 @@ export default {
   props: ['due', 'timeline', 'from', 'to', 'purpose']
 }
 </script>
+
+<style>
+div.due {
+  padding: 30px;
+}
+
+.due-text {
+  font-size: 36px;
+}
+</style>

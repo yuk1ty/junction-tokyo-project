@@ -24,10 +24,40 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'ShipOffering',
   methods: {
     processConfirm: function() {
+      // let config = {
+      //   headers: {
+      //     'Accept': 'application/json',
+      //     'Content-Type': 'application/json',
+      //     'Access-Control-Allow-Origin': '*',
+      //   }
+      // }
+      // axios.post('https://cvqwleho24.execute-api.ap-northeast-1.amazonaws.com/Dev?type=makeproject', JSON.stringify({
+      //   Datetime: 'YYYYMMDDhhmm',
+      //   ProjectFrom: 'Tokyo',
+      //   ProjectTo: 'Shimbashi',
+      //   Purpose: 'String',
+      //   Name: 'hanako6',
+      //   RecieverUserId: 123,
+      //   Mail: 'aaa@test.com'
+      // }), config).then(response => {
+      //   console.log(response)
+      // }).catch(error => {
+      //   console.log(error)
+      // })
+      // axios.get('https://cvqwleho24.execute-api.ap-northeast-1.amazonaws.com/Dev?type=getprojects', config).then(response => {
+      //   console.log(response)
+      // }).catch(error => {
+      //   console.log(error)
+      // })
+
+      // TODO うまく動かないｗ
+
       this.$router.push({ path: '/myprojects/projects' })
     }
   }

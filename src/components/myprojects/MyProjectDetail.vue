@@ -21,9 +21,13 @@ export default {
 
         [
           {
-            Datetime: '201704301130',
+            Datetime: '2017/04/30 11:30',
             Station: 'Ueno'
-          }
+          },
+          {
+            Datetime: '2017/04/30 12:30',
+            Station: 'Tokyo'
+          },
           // },
           // {
           //   Datetime: '201705011130',
@@ -34,7 +38,7 @@ export default {
           //   Station: 'Kashiwa'
           // }
         ]
-      
+
     }
   }
 }

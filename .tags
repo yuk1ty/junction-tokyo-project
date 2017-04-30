@@ -1,0 +1,9 @@
+junction-tokyo	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^# junction-tokyo$/;"	function	line:1
+Build Setup	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^## Build Setup$/;"	function	line:9
+install dependencies	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^# install dependencies$/;"	function	line:12
+serve with hot reload at localhost:8080	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^# serve with hot reload at localhost:8080$/;"	function	line:15
+build for production with minification	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^# build for production with minification$/;"	function	line:18
+build for production and view the bundle analyzer report	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^# build for production and view the bundle analyzer report$/;"	function	line:21
+run unit tests	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^# run unit tests$/;"	function	line:24
+run e2e tests	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^# run e2e tests$/;"	function	line:27
+run all tests	/Users/toyodayuki/Documents/git/junction-tokyo/README.md	/^# run all tests$/;"	function	line:30

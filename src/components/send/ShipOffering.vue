@@ -56,12 +56,12 @@ export default {
         ProjectTo: self.projectTo,
         Purpose: self.purpose,
         Name: self.name,
-        RecieverUserId: self.receiverUserId,
+        RecieverUserId: 123,
         Mail: self.mail
-       }), config).then(response => {
-         console.log(response)
-         self.$router.push({ path: '/myprojects/projects' })
-       }).catch(error => {
+      }), config).then(response => {
+        console.log(response)
+        self.$router.push({ path: '/myprojects/projects' })
+      }).catch(error => {
         console.log(error)
       })
     }

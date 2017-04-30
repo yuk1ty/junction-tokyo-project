@@ -1,5 +1,9 @@
 # junction-tokyo
 
+* Smart Phone Application for Junction Tokyo 2017.
+* Only checked on Safari & Chrome (maybe ont IE not working).
+* See https://junction-tokyo-2017-app.herokuapp.com/ with your smart phone.
+
 > juntion tokyo project
 
 ## Build Setup

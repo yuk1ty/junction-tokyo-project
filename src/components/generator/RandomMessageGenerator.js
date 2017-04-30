@@ -1,3 +1,0 @@
-generateRandomMessage: function() {
-  
-}

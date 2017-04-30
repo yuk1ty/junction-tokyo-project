@@ -6,7 +6,6 @@
       <div class="list">
         <div class="list-item list-item--chevron" v-for="result in search_results">
           <div class="list-item__left">
-            <!-- <span class="date">{{ result.fromDatetime }}</span> -->
             <span class="date">{{ result.From.Date }}</span>
           </div>
 

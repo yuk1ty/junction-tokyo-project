@@ -33,7 +33,7 @@
       </label>
 
       <label class="tabbar__item">
-        <button class="tabbar__button">
+        <button class="tabbar__button" @click="chat()">
           <i class="tabbar__icon zmdi zmdi-comments"></i>
         </button>
       </label>
@@ -58,6 +58,9 @@ export default {
     },
     userProfile: function() {
       this.$router.push({ name: 'user', params: { id: USER_ID } })
+    },
+    chat: function() {
+      this.$router.push({ path: '/chat' })
     }
   },
   components: {

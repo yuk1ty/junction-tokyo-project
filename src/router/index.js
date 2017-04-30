@@ -19,6 +19,7 @@ import MessageForm from '@/components/generator/MessageForm'
 import MyProjects from '@/components/myprojects/MyProjects'
 import MyProjectDetail from '@/components/myprojects/MyProjectDetail'
 import UserProfile from '@/components/user/UserProfile'
+import Chat from '@/components/chat/Chat'
 
 Vue.use(Router)
 Vue.use(VueOnsen)
@@ -92,6 +93,11 @@ export default new Router({
       path: '/user/:id',
       name: 'user',
       component: UserProfile
+    },
+    {
+      path: '/chat',
+      name: 'chat',
+      component: Chat
     }
   ]
 })

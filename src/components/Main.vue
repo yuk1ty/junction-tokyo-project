@@ -79,6 +79,9 @@ export default {
 }
 
 .top-nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #666;
   text-decoration: none;
 }

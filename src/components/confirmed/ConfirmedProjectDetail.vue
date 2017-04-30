@@ -3,14 +3,12 @@
     <application-header title="To XXX" direction="/confirmed/projects"></application-header>
 
     <div class="project_detail__detail">
-      <project-detail due="4/15" :timeline="timeline" from="2017/05/01" to="2017/05/31" purpose="HBD"></project-detail>
+      <project-detail due="5/1" :timeline="timeline" from="2017/05/01" to="2017/05/31" purpose="HBD"></project-detail>
       <div class="center map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3240.44957040023!2d139.69739011471083!3d35.69055298019216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1493465984926" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
-      <div class="tabbar">
-        <button class="button--large--cta" style="width: 95%; margin: 0 auto;" @click="moveToGenerateMessage()">Message</button>
-      </div>
+      <button class="button--large--cta" style="width: 95%; margin: 20px auto;" @click="moveToGenerateMessage()"><i class="tabbar__icon zmdi zmdi-card-giftcard"></i>Message</button>
     </div>
   </div>
 </template>
@@ -43,6 +41,10 @@ export default {
             Datetime: '2017/04/30 12:30',
             Station: 'Tokyo'
           },
+          {
+            Datetime: '2017/05/01 15:00',
+            Station: 'Harajuku'
+          }
           // },
           // {
           //   Datetime: '201705011130',
@@ -58,3 +60,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.map {
+  margin: 50px 0;
+}
+</style>

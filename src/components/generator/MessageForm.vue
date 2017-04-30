@@ -7,21 +7,21 @@
       Celebrate XXX's birthday!
     </p>
 
-    <div class= "random_message">
+    <div class="random_message">
       <p>
-        H: <input type="text" class="text-input text-input--underbar" v-model="message1" />
+        H: <input type="text" class="text-input text-input--underbar text_area" v-model="message1" />
       </p>
       <p>
-        A: <input type="text" class="text-input text-input--underbar" v-model="message2" />
+        A: <input type="text" class="text-input text-input--underbar text_area" v-model="message2" />
       </p>
       <p>
-        P: <input type="text" class="text-input text-input--underbar" v-model="message3" />
+        P: <input type="text" class="text-input text-input--underbar text_area" v-model="message3" />
       </p>
       <p>
-        P: <input type="text" class="text-input text-input--underbar" v-model="message4" />
+        P: <input type="text" class="text-input text-input--underbar text_area" v-model="message4" />
       </p>
       <p>
-        Y: <input type="text" class="text-input text-input--underbar" v-model="message5" />
+        Y: <input type="text" class="text-input text-input--underbar text_area" v-model="message5" />
       </p>
     </div>
 
@@ -59,3 +59,14 @@ export default {
   }
 }
 </script>
+
+<style>
+.random_message {
+  margin-top: 2.5em;
+}
+
+.text_area {
+  margin-bottom: 1.4em;
+  width: 20em;
+}
+</style>

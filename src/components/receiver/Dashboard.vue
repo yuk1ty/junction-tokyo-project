@@ -1,7 +1,11 @@
 <template>
   <div>
     <application-header title="Your Message" direction="/"></application-header>
-    <div class="center">{{ message }}</div>
+    <div class="center message_board">
+      <p>
+      {{ message }}
+      </p>
+    </div>
   </div>
 </template>
 
@@ -20,3 +24,11 @@ export default {
   }
 }
 </script>
+
+<style>
+.message_board {
+  margin: 200px 2em;
+  padding: 25px 40px;
+  background: #CFCFC4;
+}
+</style>

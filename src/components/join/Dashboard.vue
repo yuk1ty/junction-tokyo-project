@@ -14,11 +14,11 @@
           <input type="text" class="text-input text-input--underbar text_area" placeholder="Datetime:" value="">
         </div>
 
-        <button class="button--large--cta search_button" style="width: 95%;">Search</button>
+        <button class="button--large--cta search_button" style="width: 95%;" @click="searchAction()">Search</button>
     </div>
 
     <div class="join__search_result">
-      <ul class="list" v-if="search_results.length != 0">
+      <ul class="list" v-if="display">
         <li class="list-item list-item--chevron" v-for="result in search_results">
           <div class="list-item__left">
             <span class="date">5/1</span>
@@ -61,7 +61,14 @@ export default {
         href: BASE_URI + '/3',
         from: 'Kichijoji Station',
         to: 'Mitaka Station'
-      }]
+      }],
+      display: false
+    }
+  },
+  methods: {
+    searchAction: function() {
+      let self = this;
+      self.display = true
     }
   }
 }

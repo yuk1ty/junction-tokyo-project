@@ -25,9 +25,8 @@
       </p>
     </div>
 
-    <div class="tabbar">
-      <button class="button--large--cta" style="width: 95%; margin: 0 auto;" @click="add(message1 + message2 + message3 + message4 + message5)">Confirm</button>
-    </div>
+    <button class="button--large--cta" style="width: 95%; margin: 0 auto;" @click="add(message1 + message2 + message3 + message4 + message5)">Confirm</button>
+
   </div>
 </template>
 

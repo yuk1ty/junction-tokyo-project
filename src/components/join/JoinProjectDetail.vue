@@ -6,9 +6,7 @@
       <project-detail due="5/1" :timeline="timeline" from="2017/05/01" to="2017/05/31" purpose="HBD"></project-detail>
     </div>
 
-    <div class="tabbar">
-      <button class="button--large--cta" style="width: 95%; margin: 0 auto;">Join!</button>
-    </div>
+    <button class="button--large--cta" style="width: 95%; margin: 0 auto;">Join!</button>
   </div>
 </template>
 
